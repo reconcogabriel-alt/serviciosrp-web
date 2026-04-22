@@ -1,3 +1,16 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-bg",
+      "description": "Modern construction site with blue sky",
+      "imageUrl": "https://picsum.photos/seed/construction1/1920/1080",
+      "imageHint": "construction architecture"
+    },
+    {
+      "id": "project-1",
+      "description": "Residential building project",
+      "imageUrl": "https://picsum.photos/seed/project1/800/600",
+      "imageHint": "house building"
+    }
+  ]
 }
