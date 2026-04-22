@@ -12,7 +12,7 @@ export default {
     extend: {
       fontFamily: {
         body: ['Aptos', 'ui-sans-serif', 'system-ui', 'sans-serif'],
-        headline: ['Aptos Display', 'Aptos', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        headline: ['"Aptos Display"', 'Aptos', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
