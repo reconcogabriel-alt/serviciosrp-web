@@ -11,8 +11,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        body: ['Source Sans 3', 'sans-serif'],
-        headline: ['Playfair Display', 'serif'],
+        body: ['Aptos', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+        headline: ['Aptos Display', 'Aptos', 'ui-sans-serif', 'system-ui', 'sans-serif'],
         code: ['monospace'],
       },
       colors: {
