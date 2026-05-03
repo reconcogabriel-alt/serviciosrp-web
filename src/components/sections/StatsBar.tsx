@@ -3,7 +3,7 @@
 
 const stats = [
   { value: "10+", label: "Años de Experiencia" },
-  { value: "500+", label: "Proyectos Realizados" },
+  { value: "50+", label: "Proyectos Realizados" },
   { value: "100%", label: "Calidad Garantizada" },
   { value: "HN", label: "Cobertura Nacional" },
 ];
