@@ -2,7 +2,7 @@
 "use client";
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Building2, Paintbrush, Hammer, Ruler } from "lucide-react";
+import { Building2, Paintbrush, Hammer, Ruler, Smartphone, Calculator } from "lucide-react";
 
 const services = [
   {
@@ -14,6 +14,16 @@ const services = [
     title: "Remodelaciones",
     desc: "Transformamos sus espacios existentes en entornos modernos y funcionales con acabados de primera calidad.",
     icon: Paintbrush,
+  },
+  {
+    title: "Sistema App Bloquera",
+    desc: "Control total de producción y logística de bloques con nuestra plataforma digital personalizada para máxima eficiencia.",
+    icon: Smartphone,
+  },
+  {
+    title: "Costos Unitarios",
+    desc: "Análisis técnico y presupuestación precisa mediante nuestro sistema avanzado de gestión de costos unitarios.",
+    icon: Calculator,
   },
   {
     title: "Mantenimiento General",
@@ -32,15 +42,15 @@ export function Services() {
     <section className="py-24 bg-background" id="servicios">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold font-headline text-primary mb-4">Nuestros Servicios</h2>
+          <h2 className="text-4xl font-bold font-headline text-primary mb-4">Nuestros Servicios y Tecnología</h2>
           <div className="w-20 h-1.5 bg-secondary mx-auto mb-6"></div>
           <p className="max-w-2xl mx-auto text-muted-foreground text-lg">
-            Ofrecemos soluciones integrales en el sector de la construcción, 
-            adaptándonos a las necesidades específicas de cada cliente con profesionalismo.
+            Ofrecemos soluciones integrales y tecnológicas en el sector de la construcción, 
+            garantizando precisión y eficiencia en cada etapa del proyecto.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, idx) => (
             <Card key={idx} className="border-none shadow-lg hover:shadow-2xl transition-all duration-300 group hover:-translate-y-2">
               <CardHeader className="pt-8 flex flex-col items-center">
