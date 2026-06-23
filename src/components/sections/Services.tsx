@@ -2,7 +2,14 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Building2, Paintbrush, Hammer, Ruler, Smartphone, Calculator } from "lucide-react";
 
-const services = [
+interface Service {
+  title: string;
+  desc: string;
+  icon: React.ElementType;
+  link?: string;
+}
+
+const services: Service[] = [
   {
     title: "Construcción Civil",
     desc: "Desarrollo de infraestructuras sólidas y edificaciones de alto estándar, desde cimientos hasta acabados finales.",
@@ -61,9 +68,9 @@ export function Services() {
                 <p className="text-muted-foreground leading-relaxed">
                   {service.desc}
                 </p>
-                {"link" in service && (
+                {service.link && (
                   
-                    href={(service as any).link}
+                    href={service.link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-4 text-primary font-semibold hover:underline"
