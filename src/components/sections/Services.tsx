@@ -7,19 +7,16 @@ const services = [
     title: "Construcción Civil",
     desc: "Desarrollo de infraestructuras sólidas y edificaciones de alto estándar, desde cimientos hasta acabados finales.",
     icon: Building2,
-    link: null,
   },
   {
     title: "Remodelaciones",
     desc: "Transformamos sus espacios existentes en entornos modernos y funcionales con acabados de primera calidad.",
     icon: Paintbrush,
-    link: null,
   },
   {
     title: "Sistema App Bloquera",
     desc: "Control total de producción y logística de bloques con nuestra plataforma digital personalizada para máxima eficiencia.",
     icon: Smartphone,
-    link: null,
   },
   {
     title: "Costos Unitarios",
@@ -31,13 +28,11 @@ const services = [
     title: "Mantenimiento General",
     desc: "Servicios preventivos y correctivos para asegurar la longevidad y buen estado de sus instalaciones corporativas y residenciales.",
     icon: Hammer,
-    link: null,
   },
   {
     title: "Diseño y Planificación",
     desc: "Asesoría experta en planos, presupuestos y gestión de proyectos para materializar su visión con precisión.",
     icon: Ruler,
-    link: null,
   },
 ];
 
@@ -66,9 +61,9 @@ export function Services() {
                 <p className="text-muted-foreground leading-relaxed">
                   {service.desc}
                 </p>
-                {service.link && (
+                {"link" in service && (
                   
-                    href={service.link}
+                    href={(service as any).link}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-block mt-4 text-primary font-semibold hover:underline"
