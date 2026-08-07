@@ -70,7 +70,7 @@ export function Services() {
                   {service.desc}
                 </p>
                 {service.link && (
-                  
+                  <a
                     href={service.link}
                     target="_blank"
                     rel="noopener noreferrer"
